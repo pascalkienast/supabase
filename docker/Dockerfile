@@ -10,6 +10,5 @@ RUN apt-get update && \
 
 RUN git clone --depth 1 https://github.com/supabase/supabase
 RUN cd supabase/docker
-RUN cp .env.example .env
 RUN docker compose pull
 RUN docker compose up -d
