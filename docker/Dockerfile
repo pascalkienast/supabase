@@ -5,7 +5,7 @@ LABEL maintainer=”YourName”
 RUN apt-get update && \
     apt-get -qy full-upgrade && \
     apt-get install -qy curl && \
-        apt-get install -qy git && \
+    apt-get install -qy git && \
     curl -sSL https://get.docker.com/ | sh
 
 RUN git clone --depth 1 https://github.com/supabase/supabase
